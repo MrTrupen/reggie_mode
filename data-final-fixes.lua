@@ -33,3 +33,13 @@ for _, underground in pairs(data.raw["underground-belt"]) do
         underground.speed = underground.speed * SPEED_MULTIPLAYER
     end
 end
+
+
+-- INSERTERS
+-- Inserter extension and rotation speed
+for _, inserter in pairs(data.raw["inserter"]) do
+    if inserter.extension_speed and inserter.rotation_speed then
+        inserter.extension_speed = inserter.extension_speed * SPEED_MULTIPLAYER
+        inserter.rotation_speed = inserter.rotation_speed * SPEED_MULTIPLAYER
+    end
+end

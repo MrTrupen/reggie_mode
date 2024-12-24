@@ -59,3 +59,32 @@ for _, character in pairs(data.raw["character"]) do
         character.inventory_size = character.inventory_size + INVENTORY_SIZE
     end
 end
+
+-- BOTS
+-- TODO: Send blackmails to developers for storing energy this way
+-- Construction bots speed and battery
+for _, robot in pairs(data.raw["construction-robot"]) do
+    if robot.speed then
+        robot.speed = robot.speed * SPEED_MULTIPLAYER
+        robot.energy_per_move = tostring(5000 * 1 / SPEED_MULTIPLAYER) .. "J" 
+        robot.energy_per_tick = tostring(50 * 1 / SPEED_MULTIPLAYER) .. "J" 
+    end
+end
+
+-- Logistic bots speed and battery
+for _, robot in pairs(data.raw["logistic-robot"]) do
+    if robot.speed then
+        robot.speed = robot.speed * SPEED_MULTIPLAYER
+        robot.energy_per_move = tostring(5000 * 1 / SPEED_MULTIPLAYER) .. "J" 
+        robot.energy_per_tick = tostring(50 * 1 / SPEED_MULTIPLAYER) .. "J" 
+    end
+end
+
+-- Roboport charging spots
+for _, roboport in pairs(data.raw["roboport"]) do
+    if roboport.charging_station_count then
+        roboport.charging_station_count = roboport.charging_station_count * SPEED_MULTIPLAYER
+    else
+        roboport.charging_station_count = 4 * SPEED_MULTIPLAYER
+    end
+end

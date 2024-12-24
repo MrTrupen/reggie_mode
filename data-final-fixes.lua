@@ -49,6 +49,7 @@ for _, inserter in pairs(data.raw["inserter"]) do
     end
 end
 
+
 -- CHARACTER
 -- Character mining speed
 for _, character in pairs(data.raw["character"]) do

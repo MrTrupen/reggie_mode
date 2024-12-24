@@ -7,5 +7,5 @@
     "dependencies": [
         "base >= 2.0"
     ],
-    "description": "Making factorio easier, so even Reggie can play it."
+    "description": "Doubles the game speed while keeping 60 UPS, making Factorio easier and more accessible, so even Reggie can enjoy playing it."
 }

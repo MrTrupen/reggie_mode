@@ -1,7 +1,12 @@
 --data-final-fixes.lua
 
-SPEED_MULTIPLAYER = 2
+-- SPEED MULTIPLAYER
+SPEED_MULTIPLAYER = 2 -- 2 for 2x faster, 0.5 for 2x slower
 CRAFTING_MULTIPLAYER = 1 / SPEED_MULTIPLAYER
+
+-- Character stats
+RUNNING_SPEED = 1.75 -- 1.75 for 75% faster, 0.25 for 75% slower
+INVENTORY_SIZE = 20 -- 20 for 20 more slots, -20 for 20 less slots; By default player has 40 slots
 
 -- RECIPES
 -- Every recipe craft 2x faster
@@ -41,5 +46,15 @@ for _, inserter in pairs(data.raw["inserter"]) do
     if inserter.extension_speed and inserter.rotation_speed then
         inserter.extension_speed = inserter.extension_speed * SPEED_MULTIPLAYER
         inserter.rotation_speed = inserter.rotation_speed * SPEED_MULTIPLAYER
+    end
+end
+
+-- CHARACTER
+-- Character mining speed
+for _, character in pairs(data.raw["character"]) do
+    if character.mining_speed and character.running_speed and character.inventory_size then
+        character.mining_speed = character.mining_speed * SPEED_MULTIPLAYER
+        character.running_speed = character.running_speed * RUNNING_SPEED
+        character.inventory_size = character.inventory_size + INVENTORY_SIZE
     end
 end

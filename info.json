@@ -1,0 +1,11 @@
+{
+    "name": "reggie_mode",
+    "version": "0.1.0",
+    "title": "Reggie mode (2x game speed)",
+    "author": "Trupen",
+    "factorio_version": "2.0",
+    "dependencies": [
+        "base >= 2.0"
+    ],
+    "description": "Making factorio easier, so even Reggie can play it."
+}

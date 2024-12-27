@@ -2,7 +2,7 @@
 
 -- SPEED MULTIPLAYER
 SPEED_MULTIPLAYER = 2 -- 2 for 2x faster, 0.5 for 2x slower
-CRAFTING_MULTIPLAYER = 1 / SPEED_MULTIPLAYER
+CRAFTING_MULTIPLAYER = 1 / SPEED_MULTIPLAYER -- Inverse of speed multiplayer (2 speed_multiplier = 0.5 crafting_multiplier)
 
 -- Character stats
 RUNNING_SPEED = 1.75 -- 1.75 for 75% faster, 0.25 for 75% slower
@@ -86,5 +86,13 @@ for _, roboport in pairs(data.raw["roboport"]) do
         roboport.charging_station_count = roboport.charging_station_count * SPEED_MULTIPLAYER
     else
         roboport.charging_station_count = 4 * SPEED_MULTIPLAYER
+    end
+end
+
+-- LABS
+-- Lab speed
+for _, lab in pairs(data.raw["lab"]) do
+    if lab.researching_speed then
+        lab.researching_speed = lab.researching_speed * SPEED_MULTIPLAYER
     end
 end

@@ -19,19 +19,21 @@ for _, recipe in pairs(data.raw.recipe) do
 end
 
 
--- BELTS
+------------------------------------ BELTS ------------------------------------
 -- Belt speed
 for _, belt in pairs(data.raw["transport-belt"]) do
     if belt.speed then
         belt.speed = belt.speed * SPEED_MULTIPLAYER
     end
 end
+
 -- Spliter speed
 for _, splitter in pairs(data.raw["splitter"]) do
     if splitter.speed then
         splitter.speed = splitter.speed * SPEED_MULTIPLAYER
     end
 end
+
 -- Underground belt speed
 for _, underground in pairs(data.raw["underground-belt"]) do
     if underground.speed then
@@ -39,8 +41,16 @@ for _, underground in pairs(data.raw["underground-belt"]) do
     end
 end
 
+-- Loaders speed
+for _, loader in pairs(data.raw["loader"]) do
+    if loader.speed then
+        loader.speed = loader.speed * SPEED_MULTIPLAYER
+    end
+end
 
--- INSERTERS
+
+------------------------------------  INSERTERS ------------------------------------
+
 -- Inserter extension and rotation speed
 for _, inserter in pairs(data.raw["inserter"]) do
     if inserter.extension_speed and inserter.rotation_speed then
@@ -50,7 +60,8 @@ for _, inserter in pairs(data.raw["inserter"]) do
 end
 
 
--- CHARACTER
+------------------------------------ CHARACTER ------------------------------------
+
 -- Character mining speed
 for _, character in pairs(data.raw["character"]) do
     if character.mining_speed and character.running_speed and character.inventory_size then
@@ -60,7 +71,8 @@ for _, character in pairs(data.raw["character"]) do
     end
 end
 
--- BOTS
+------------------------------------  BOTS ------------------------------------
+
 -- TODO: Send blackmails to developers for storing energy this way
 -- Construction bots speed and battery
 for _, robot in pairs(data.raw["construction-robot"]) do
@@ -89,7 +101,8 @@ for _, roboport in pairs(data.raw["roboport"]) do
     end
 end
 
--- LABS
+------------------------------------  LABS ------------------------------------
+
 -- Lab speed
 for _, lab in pairs(data.raw["lab"]) do
     if lab.researching_speed then

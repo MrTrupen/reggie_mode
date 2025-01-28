@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.5
+Date: ????
+  Info:
+    - Integration for auto mod portal updates
+---------------------------------------------------------------------------------------------------
 Version: 0.1.4
 Date: 2025-01-28
   Changes:
@@ -12,14 +17,14 @@ Date: 2025-01-21
 Version: 0.1.2
 Date: 2024-12-28
   Features:
-    - Mining productivity also affect newly created forces.
+    - Mining productivity also affect newly created forces
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.1
 Date: 27. 12. 2024
   Features:
-    - Mod affects labs speed.
+    - Mod affects labs speed
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.0
 Date: 24. 12. 2024
   Major Features:
-    - Initial release.
+    - Initial release

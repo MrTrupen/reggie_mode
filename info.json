@@ -1,11 +1,26 @@
 {
     "name": "reggie_mode",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "title": "Reggie mode (2x game speed)",
     "author": "Trupen",
     "factorio_version": "2.0",
     "dependencies": [
         "base >= 2.0"
     ],
-    "description": "Doubles the game speed while keeping 60 UPS, making Factorio easier and more accessible, so even Reggie can enjoy playing it."
+    "description": "Doubles the entities speed while keeping 60 FPS/UPS, making Factorio easier and more accessible, so even Reggie can enjoy playing it.",
+    "package": {
+        "git_publish_branch": "master",
+        "gallery": [
+            "gallery/belt_speed.png",
+            "gallery/inserter_speed.png",
+            "gallery/silo_crafting.png"
+        ],
+        "ignore": [
+            ".git",
+            "graphics/*.afphoto",
+            "gallery/**"
+        ],
+        "readme": "README.md",
+        "sync_portal_details": true
+    }
 }

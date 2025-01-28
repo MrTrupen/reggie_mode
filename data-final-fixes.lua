@@ -1,4 +1,5 @@
---data-final-fixes.lua
+------------------------------------ Constants ------------------------------------
+--#region Constants
 
 -- SPEED MULTIPLAYER
 SPEED_MULTIPLAYER = 2                        -- 2 for 2x faster, 0.5 for 2x slower
@@ -7,8 +8,11 @@ CRAFTING_MULTIPLAYER = 1 / SPEED_MULTIPLAYER -- Inverse of speed multiplayer (2 
 -- Character stats
 RUNNING_SPEED = 1.75 -- 1.75 for 75% faster, 0.25 for 75% slower
 INVENTORY_SIZE = 20  -- 20 for 20 more slots, -20 for 20 less slots; By default player has 40 slots
+--#endregion
 
--- RECIPES
+------------------------------------ Recipes ------------------------------------
+--#region Recipes
+
 -- Every recipe craft 2x faster
 for _, recipe in pairs(data.raw.recipe) do
     if recipe.energy_required then
@@ -17,9 +21,11 @@ for _, recipe in pairs(data.raw.recipe) do
         recipe.energy_required = 0.5 * CRAFTING_MULTIPLAYER
     end
 end
+--#endregion
 
+------------------------------------ Belts ------------------------------------
+--#region Belts
 
------------------------------------- BELTS ------------------------------------
 -- Belt speed
 for _, belt in pairs(data.raw["transport-belt"]) do
     if belt.speed then
@@ -53,9 +59,10 @@ for _, loader1x1 in pairs(data.raw["loader-1x1"]) do
         loader1x1.speed = loader1x1.speed * SPEED_MULTIPLAYER
     end
 end
+--endregion
 
-
-------------------------------------  INSERTERS ------------------------------------
+------------------------------------ Inserters ------------------------------------
+--#region Inserters
 
 -- Inserter extension and rotation speed
 for _, inserter in pairs(data.raw["inserter"]) do
@@ -64,9 +71,10 @@ for _, inserter in pairs(data.raw["inserter"]) do
         inserter.rotation_speed = inserter.rotation_speed * SPEED_MULTIPLAYER
     end
 end
+--endregion
 
-
------------------------------------- CHARACTER ------------------------------------
+------------------------------------ Character ------------------------------------
+--#region Character
 
 -- Character mining speed
 for _, character in pairs(data.raw["character"]) do
@@ -76,10 +84,11 @@ for _, character in pairs(data.raw["character"]) do
         character.inventory_size = character.inventory_size + INVENTORY_SIZE
     end
 end
+--endregion
 
-------------------------------------  BOTS ------------------------------------
+------------------------------------ Bots ------------------------------------
+--#region Bots
 
--- TODO: Send blackmails to developers for storing energy this way
 -- Construction bots speed and battery
 for _, robot in pairs(data.raw["construction-robot"]) do
     if robot.speed then
@@ -106,8 +115,10 @@ for _, roboport in pairs(data.raw["roboport"]) do
         roboport.charging_station_count = 4 * SPEED_MULTIPLAYER
     end
 end
+--endregion
 
-------------------------------------  LABS ------------------------------------
+------------------------------------ Labs ------------------------------------
+--#region Labs
 
 -- Lab speed
 for _, lab in pairs(data.raw["lab"]) do
@@ -115,3 +126,4 @@ for _, lab in pairs(data.raw["lab"]) do
         lab.researching_speed = lab.researching_speed * SPEED_MULTIPLAYER
     end
 end
+--endregion

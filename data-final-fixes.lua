@@ -1,12 +1,12 @@
 --data-final-fixes.lua
 
 -- SPEED MULTIPLAYER
-SPEED_MULTIPLAYER = 2 -- 2 for 2x faster, 0.5 for 2x slower
+SPEED_MULTIPLAYER = 2                        -- 2 for 2x faster, 0.5 for 2x slower
 CRAFTING_MULTIPLAYER = 1 / SPEED_MULTIPLAYER -- Inverse of speed multiplayer (2 speed_multiplier = 0.5 crafting_multiplier)
 
 -- Character stats
 RUNNING_SPEED = 1.75 -- 1.75 for 75% faster, 0.25 for 75% slower
-INVENTORY_SIZE = 20 -- 20 for 20 more slots, -20 for 20 less slots; By default player has 40 slots
+INVENTORY_SIZE = 20  -- 20 for 20 more slots, -20 for 20 less slots; By default player has 40 slots
 
 -- RECIPES
 -- Every recipe craft 2x faster
@@ -41,7 +41,7 @@ for _, underground in pairs(data.raw["underground-belt"]) do
     end
 end
 
--- Loaders speed 
+-- Loaders speed
 for _, loader in pairs(data.raw["loader"]) do
     if loader.speed then
         loader.speed = loader.speed * SPEED_MULTIPLAYER
@@ -84,8 +84,8 @@ end
 for _, robot in pairs(data.raw["construction-robot"]) do
     if robot.speed then
         robot.speed = robot.speed * SPEED_MULTIPLAYER
-        robot.energy_per_move = tostring(5000 * 1 / SPEED_MULTIPLAYER) .. "J" 
-        robot.energy_per_tick = tostring(50 * 1 / SPEED_MULTIPLAYER) .. "J" 
+        robot.energy_per_move = tostring(5000 * 1 / SPEED_MULTIPLAYER) .. "J"
+        robot.energy_per_tick = tostring(50 * 1 / SPEED_MULTIPLAYER) .. "J"
     end
 end
 
@@ -93,8 +93,8 @@ end
 for _, robot in pairs(data.raw["logistic-robot"]) do
     if robot.speed then
         robot.speed = robot.speed * SPEED_MULTIPLAYER
-        robot.energy_per_move = tostring(5000 * 1 / SPEED_MULTIPLAYER) .. "J" 
-        robot.energy_per_tick = tostring(50 * 1 / SPEED_MULTIPLAYER) .. "J" 
+        robot.energy_per_move = tostring(5000 * 1 / SPEED_MULTIPLAYER) .. "J"
+        robot.energy_per_tick = tostring(50 * 1 / SPEED_MULTIPLAYER) .. "J"
     end
 end
 

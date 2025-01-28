@@ -42,9 +42,13 @@ for _, underground in pairs(data.raw["underground-belt"]) do
 end
 
 -- Loaders speed
-for _, loader in pairs(data.raw["loader"]) do
-    if loader.speed then
-        loader.speed = loader.speed * SPEED_MULTIPLAYER
+for _,collection in pairs (data.raw) do
+    for _,thing in pairs (collection) do
+        if thing.type == "loader" or thing.type == "loader-1x1" then
+            if thing.speed then
+                thing.speed = thing.speed * SPEED_MULTIPLAYER
+            end
+	    end
     end
 end
 

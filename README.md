@@ -9,6 +9,7 @@ Makes game faster.
 
 - Double belts speed
 - Double crafting speed
+- Double loaders speed
 - Double Inserters speed
 - Double bots speed
 - Double charging spots in roboports

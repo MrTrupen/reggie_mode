@@ -3,7 +3,8 @@ Version: 0.1.5
 Date: ????
   Info:
     - Integration for auto mod portal updates
-    - Increase cod redability
+    - Increase code redability
+    - Improve mod portal description
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.4
 Date: 2025-01-28

@@ -2,7 +2,15 @@
 
 # Reggie mode
 
-Doubles the entities speed while keeping 60 FPS/UPS, making Factorio easier and more accessible, so even Reggie can enjoy playing it.
+Reggie mode doubles the speed of belts, crafting, inserters, bots, and so on.
+It doesn't modify the game speed itself, so you still have 60 FPS/UPS.
+
+This will make Factorio easier and more accessible, so even Reggie can enjoy playing it.
+
+## Installation
+
+Download and install from the [official Factorio mod
+portal](https://mods.factorio.com/mod/reggie_mode).
 
 ## Features
 

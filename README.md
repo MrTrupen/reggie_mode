@@ -14,22 +14,22 @@ portal](https://mods.factorio.com/mod/reggie_mode).
 
 ## Features
 
-Makes game faster.
+Makes selected logistics, production, and character actions faster.
 
-- Double belts speed
+- Double belt speed
 - Double crafting speed
-- Double loaders speed
-- Double Inserters speed
-- Double bots speed
-- Double charging spots in roboports
-- 100% extra mining productivity
+- Double loader speed
+- Double inserter speed
+- Double bot speed
+- Double roboport charging spots
+- +100% mining productivity
 - Double player mining speed
-- 75% increased player speed
-- Few extra inventory slots
+- +75% player movement speed
+- A few extra inventory slots
 
 
 ## Contributing
 
 I guess you can use [GitHub repository](https://github.com/MrTrupen/reggie_mode) for bug reports and pull requests.
 
-For some extra question you can probably ask me on [Discord](https://www.discord.gg/trupen)
+For questions, you can ask me on [Discord](https://www.discord.gg/trupen)

@@ -3,7 +3,7 @@ Version: 0.1.5
 Date: ????
   Info:
     - Integration for auto mod portal updates
-    - Increase code redability
+    - Increase code readability
     - Improve mod portal description
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.4
@@ -22,11 +22,11 @@ Date: 2024-12-28
     - Mining productivity also affect newly created forces
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.1
-Date: 27. 12. 2024
+Date: 2024-12-27
   Features:
     - Mod affects labs speed
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.0
-Date: 24. 12. 2024
+Date: 2024-12-24
   Major Features:
     - Initial release

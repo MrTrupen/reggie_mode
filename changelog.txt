@@ -1,10 +1,11 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.5
-Date: ????
+Date: 2026-05-02
   Info:
     - Integration for auto mod portal updates
     - Increase code readability
     - Improve mod portal description
+    - Rocket silos are now affected by extra speed
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.4
 Date: 2025-01-28

@@ -21,6 +21,7 @@ Makes selected logistics, production, and character actions faster.
 - Double loader speed
 - Double inserter speed
 - Double bot speed
+- Double rocket silo speed
 - Double roboport charging spots
 - +100% mining productivity
 - Double player mining speed
